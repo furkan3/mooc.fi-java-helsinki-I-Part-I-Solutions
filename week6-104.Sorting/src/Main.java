@@ -44,13 +44,10 @@ public class Main {
         array[index2]=temp;
     }
     public static void sort(int[] array){
-        for(int i=0;i<array.length;i++){
-            for(int j=0;j<array.length;j++){
-                swap(array, j, indexOfTheSmallestStartingFrom(array, j));
-            }
+        for(int j=0;j<array.length;j++){
+            swap(array, j, indexOfTheSmallestStartingFrom(array, j));
         }
         System.out.println(Arrays.toString(array));
     }
 
 }
-
